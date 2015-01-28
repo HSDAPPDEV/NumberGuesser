@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Puh-9g-39N">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Steven_Tests" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number Guesser" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bNw-23-ynQ">
+                                <rect key="frame" x="39" y="113" width="522" height="92"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="92" id="T6R-uw-b2r"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="59"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tXE-7X-mse">
+                                <rect key="frame" x="250" y="440" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Neh-4a-aWR"/>
+                                    <constraint firstAttribute="width" constant="100" id="kB6-0R-hQN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="Guess!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="guess:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oej-eM-MQN"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your guess was too high, 3 lives remain" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pgU-za-twL">
+                                <rect key="frame" x="149" y="335" width="303" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JFm-W3-3b4">
+                                <rect key="frame" x="149" y="372" width="325" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="325" id="bZc-As-D2C"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.34351870890000002" green="0.82018402999999995" blue="0.45757095440000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="tXE-7X-mse" secondAttribute="bottom" constant="130" id="25B-xR-ZvQ"/>
+                            <constraint firstItem="tXE-7X-mse" firstAttribute="centerX" secondItem="pgU-za-twL" secondAttribute="centerX" id="LG9-YO-Ng0"/>
+                            <constraint firstItem="bNw-23-ynQ" firstAttribute="centerX" secondItem="pgU-za-twL" secondAttribute="centerX" id="Nab-hv-wQQ"/>
+                            <constraint firstItem="bNw-23-ynQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="49" id="OX7-MH-7N1"/>
+                            <constraint firstItem="bNw-23-ynQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="23" id="c0j-M4-x5I"/>
+                            <constraint firstItem="JFm-W3-3b4" firstAttribute="leading" secondItem="pgU-za-twL" secondAttribute="leading" id="etd-V4-9kU"/>
+                            <constraint firstItem="tXE-7X-mse" firstAttribute="top" secondItem="JFm-W3-3b4" secondAttribute="bottom" constant="38" id="hCI-ap-5bG"/>
+                            <constraint firstItem="bNw-23-ynQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sxm-2X-eCd"/>
+                            <constraint firstItem="JFm-W3-3b4" firstAttribute="top" secondItem="pgU-za-twL" secondAttribute="bottom" constant="16" id="yqN-yr-i7V"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="rPu-Jf-6Rf" appends="YES" id="6lh-YX-y9F"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="Xff-D1-9Vb">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="Lbb-ZS-cCR">
+                            <connections>
+                                <segue destination="ezx-ol-8BI" kind="show" id="YQd-xM-1CS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="guessOutput" destination="pgU-za-twL" id="Ubw-x8-7w8"/>
+                        <outlet property="usrGuessTxt" destination="JFm-W3-3b4" id="MNu-h7-qBm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="rPu-Jf-6Rf"/>
+            </objects>
+            <point key="canvasLocation" x="1064" y="289"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="fOB-5I-YcN">
+            <objects>
+                <viewController storyboardIdentifier="settingsSB" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ezx-ol-8BI" customClass="SettingsViewController" customModule="Steven_Tests" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rUE-Yg-nHv"/>
+                        <viewControllerLayoutGuide type="bottom" id="q7B-Gy-YrN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PPa-vH-c7V">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Maximum Number" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ad-Jh-Y9a">
+                                <rect key="frame" x="198" y="119" width="204" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="5" maxValue="1000000" translatesAutoresizingMaskIntoConstraints="NO" id="oIe-M6-IAR">
+                                <rect key="frame" x="107" y="163" width="355" height="31"/>
+                                <connections>
+                                    <action selector="changeSlider" destination="ezx-ol-8BI" eventType="valueChanged" id="iou-ec-6iT"/>
+                                </connections>
+                            </slider>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GUs-sm-tZM">
+                                <rect key="frame" x="468" y="163" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="usrMaxValue" destination="oIe-M6-IAR" id="wlT-zb-Q5P"/>
+                        <outlet property="usrSettingMaxValueDisplay" destination="GUs-sm-tZM" id="gx1-1v-jhx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4dj-tH-cV7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1712" y="303"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ZA2-HU-d2l">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Puh-9g-39N" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nps-Vz-HqF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="1k2-Eu-g3d"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UcA-b5-mlU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-431" y="26"/>
+        </scene>
+    </scenes>
+</document>
